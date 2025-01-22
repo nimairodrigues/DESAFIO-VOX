@@ -1,4 +1,4 @@
-class Login {
+class LoginPage {
 
     digitarUsername(username) {
         cy.get('[data-test=username]').type(username);
@@ -19,6 +19,12 @@ class Login {
     verificarTelaLogin() {
         cy.get('#login-button').should('exist')
     }
+
+    logar(username, password) {
+        this.digitarUsername(username)
+        this.digitarPassword(password)
+        this.clicarLogin()
+    }
 }
 
-export default new Login()
+export default new LoginPage()
