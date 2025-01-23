@@ -26,7 +26,7 @@ And('Eu digito uma senha inválida', () => {
     loginPage.digitarPassword('senhaInválida')
 })
 
-Then("I have a successful login", () => {
+Then("Deve aparecer a página de inventário", () => {
     inventoryPage.existeItemVisivel()
 })
 

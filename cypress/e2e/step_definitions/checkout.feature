@@ -1,7 +1,6 @@
 Feature: checkout
 
 Scenario: Finalizar compra com sucesso
-
 Given Que realizei o login
 And Tenho um ítem adicionado no carrinho
 And Estou na pagina do carrinho
@@ -14,7 +13,6 @@ And Clicar no botão Finish
 Then Deve aparecer que o pedido foi enviado com sucesso
 
 Scenario: Tentar comprar item sem dados do checkout
-
 Given Que realizei o login
 And Tenho um ítem adicionado no carrinho
 And Estou na pagina do carrinho
@@ -23,14 +21,12 @@ And Clicar no botão Continue
 Then Deve aparecer que o campo First Name é obrigatório
 
 Scenario: Tentar finalizar compra sem itens
-
 Given Que realizei o login
 And Estou na pagina do carrinho
 When Eu clicar em Checkout
 Then Deve aparecer que preciso ter itens no carrinho
 
 Scenario: Tentar comprar item apenas com First Name preenchido
-
 Given Que realizei o login
 And Tenho um ítem adicionado no carrinho
 And Estou na pagina do carrinho
@@ -40,7 +36,6 @@ And Clicar no botão Continue
 Then Deve aparecer que o campo Last Name é obrigatório
 
 Scenario: Tentar comprar item apenas com First Name e Last Name preenchido
-
 Given Que realizei o login
 And Tenho um ítem adicionado no carrinho
 And Estou na pagina do carrinho
@@ -51,7 +46,6 @@ And Clicar no botão Continue
 Then Deve aparecer que o campo Postal Code é obrigatório
 
 Scenario: Remover um item através do overview
-
 Given Que realizei o login
 And Tenho um ítem adicionado no carrinho
 And Estou na pagina do carrinho
@@ -66,7 +60,6 @@ And Clicar no botão de Back
 Then O item deve ser removido da lista de itens do overview
 
 Scenario: Cancelar compra na tela de overview
-
 Given Que realizei o login
 And Tenho um ítem adicionado no carrinho
 And Estou na pagina do carrinho
@@ -79,7 +72,6 @@ And Clicar no botão Cancel
 Then Deve voltar para página de inventário
 
 Scenario: Preencher First Name com 101 caracteres
-
 Given Que realizei o login
 And Tenho um ítem adicionado no carrinho
 And Estou na pagina do carrinho
@@ -91,7 +83,6 @@ And Clicar no botão Continue
 Then Deve informar que o campo First Name atingiu o limite máximo
 
 Scenario: Preencher First Name com 100 caracteres
-
 Given Que realizei o login
 And Tenho um ítem adicionado no carrinho
 And Estou na pagina do carrinho
@@ -103,7 +94,6 @@ And Clicar no botão Continue
 Then Deve válidar e passar para a tela de overview
 
 Scenario: Preencher First Name com apenas símbolos
-
 Given Que realizei o login
 And Tenho um ítem adicionado no carrinho
 And Estou na pagina do carrinho
@@ -115,7 +105,6 @@ And Clicar no botão Continue
 Then Deve informar que o campo First Name está inválido
 
 Scenario: Preencher First Name com 1 caractere
-
 Given Que realizei o login
 And Tenho um ítem adicionado no carrinho
 And Estou na pagina do carrinho
@@ -127,7 +116,6 @@ And Clicar no botão Continue
 Then Deve informar que o campo First Name não tingiu o limite mínimo de caracteres
 
 Scenario: Preencher First Name com 2 caractere
-
 Given Que realizei o login
 And Tenho um ítem adicionado no carrinho
 And Estou na pagina do carrinho
@@ -139,7 +127,6 @@ And Clicar no botão Continue
 Then Deve válidar e passar para a tela de overview
 
 Scenario: Preencher Last Name com 101 caracteress
-
 Given Que realizei o login
 And Tenho um ítem adicionado no carrinho
 And Estou na pagina do carrinho
@@ -151,7 +138,6 @@ And Clicar no botão Continue
 Then Deve informar que o campo Last Name atingiu o limite máximo de caracteres
 
 Scenario: Preencher Last Name com 100 caracteres
-
 Given Que realizei o login
 And Tenho um ítem adicionado no carrinho
 And Estou na pagina do carrinho
@@ -163,7 +149,6 @@ And Clicar no botão Continue
 Then Deve válidar e passar para a tela de overview
 
 Scenario: Preencher Last Name com apenas símbolos
-
 Given Que realizei o login
 And Tenho um ítem adicionado no carrinho
 And Estou na pagina do carrinho
@@ -175,7 +160,6 @@ And Clicar no botão Continue
 Then Deve informar que o campo Last Name está inválido
 
 Scenario: Preencher Last Name com 1 caractere
-
 Given Que realizei o login
 And Tenho um ítem adicionado no carrinho
 And Estou na pagina do carrinho
@@ -187,7 +171,6 @@ And Clicar no botão Continue
 Then Deve informar que o campo Last Name não tingiu o limite mínimo de caracteres
 
 Scenario: Preencher Last Name com 2 caractere
-
 Given Que realizei o login
 And Tenho um ítem adicionado no carrinho
 And Estou na pagina do carrinho
@@ -199,7 +182,6 @@ And Clicar no botão Continue
 Then Deve válidar e passar para a tela de overview
 
 Scenario: Preencher Postal Code com 11 dígitos
-
 Given Que realizei o login
 And Tenho um ítem adicionado no carrinho
 And Estou na pagina do carrinho
@@ -211,7 +193,6 @@ And Clicar no botão Continue
 Then Deve informar que o campo Postal Code atingiu o limite máximo de caracteres
 
 Scenario: Preencher Postal Code com 10 dígitos
-
 Given Que realizei o login
 And Tenho um ítem adicionado no carrinho
 And Estou na pagina do carrinho
@@ -223,7 +204,6 @@ And Clicar no botão Continue
 Then Deve válidar e passar para a tela de overview
 
 Scenario: Preencher Postal Code com 1 dígito
-
 Given Que realizei o login
 And Tenho um ítem adicionado no carrinho
 And Estou na pagina do carrinho
@@ -235,7 +215,6 @@ And Clicar no botão Continue
 Then Deve informar que o campo Postal Code não tingiu o limite mínimo de caracteres
 
 Scenario: Preencher Postal Code com 2 dígitos
-
 Given Que realizei o login
 And Tenho um ítem adicionado no carrinho
 And Estou na pagina do carrinho
@@ -247,7 +226,6 @@ And Clicar no botão Continue
 Then Deve válidar e passar para a tela de overview
 
 Scenario: Preencher Postal Code com apenas símbolos
-
 Given Que realizei o login
 And Tenho um ítem adicionado no carrinho
 And Estou na pagina do carrinho

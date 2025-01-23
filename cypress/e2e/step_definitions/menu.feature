@@ -1,7 +1,6 @@
 Feature: Menu
 
 Scenario: Realizar logout
-
 Given Que realizei o login
 And estou na pagina de inventário
 When Eu clico no Menu

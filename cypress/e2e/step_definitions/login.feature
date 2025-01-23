@@ -5,7 +5,7 @@ Given Que estou na pagina de login
 When Eu digito um usuário válido
 And Eu digito uma senha válida
 And Eu clico em login
-Then I have a successful login
+Then Deve aparecer a página de inventário
 
 Scenario: Tentar login sem dados
 Given Que estou na pagina de login
