@@ -1,7 +1,6 @@
 import inventoryPage from '../../../support/pageObjects/inventoryPage'
 import loginPage from '../../../support/pageObjects/loginPage'
 import { Given, When, Then, And } from 'cypress-cucumber-preprocessor/steps'
-import menuPage from '../../../support/pageObjects/menuPage'
 import carrinhoPage from '../../../support/pageObjects/carrinhoPage'
 import checkoutPage from '../../../support/pageObjects/checkoutPage'
 
