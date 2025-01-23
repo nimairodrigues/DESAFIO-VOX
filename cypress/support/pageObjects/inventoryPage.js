@@ -54,6 +54,14 @@ class InventoryPage {
         cy.get("[class='btn_primary btn_inventory']").click()
     }
 
+    clicarRemoveDoViewItem() {
+        cy.get("[class='btn_secondary btn_inventory']").click()
+    }
+
+    clicarBackDoViewItem() {
+        cy.get('[class=inventory_details_back_button]').click( {force: true} )
+    }
+
     verificarNumDeItemsCarrinho(num){
         cy.get('.fa-layers-counter').should('have.text', num)
     }

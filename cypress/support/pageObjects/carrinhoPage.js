@@ -1,7 +1,7 @@
 class CarrinhoPage {
 
     clicarCheckout() {
-        cy.get('.btn_action checkout_button').click()
+        cy.get("[class='btn_action checkout_button']").click()
     }
 
     clicarRemoverItem() {
