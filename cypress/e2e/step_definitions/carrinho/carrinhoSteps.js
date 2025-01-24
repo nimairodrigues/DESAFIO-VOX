@@ -13,11 +13,11 @@ And('estou na pagina de inventário', () => {
     inventoryPage.existeItemVisivel()
 })
 
-When('Eu clicar no botão "Add to cart" de um item', () => {
+When('Eu clicar no botão Add to cart de um item', () => {
     inventoryPage.clicarAddToCartDoCard(2)
 })
 
-When('Eu clicar no botão "Add to cart" de 3 itens', () => {
+When('Eu clicar no botão Add to cart de 3 itens', () => {
     inventoryPage.clicarAddToCartDoCard(1)
     inventoryPage.clicarAddToCartDoCard(2)
     inventoryPage.clicarAddToCartDoCard(3)
@@ -31,23 +31,23 @@ And('Eu clicar no ícone de carrinho', () => {
     inventoryPage.clicarCarrinho()
 })
 
-And('Eu clicar no botão "Add to cart" do item', () => {
+And('Eu clicar no botão Add to cart do item', () => {
     inventoryPage.clicarAddToCartDoViewItem()
 })
 
-And('Eu clicar no botão "Remove" do item', () => {
+And('Eu clicar no botão Remove do item', () => {
     inventoryPage.clicarRemoveDoCard(2)
 })
 
-And('Eu clicar no botão "Add to cart" da tela de visualização do item', () => {
+And('Eu clicar no botão Add to cart da tela de visualização do item', () => {
     viewItemPage.clicarAddToCart()
 })
 
-And('Eu clicar no botão "Remove" da tela de visualização do item', () => {
+And('Eu clicar no botão Remove da tela de visualização do item', () => {
     viewItemPage.clicarRemoveDoCart()
 })
 
-And('Eu clicar no botão de "Remove" do item', () => {
+And('Eu clicar no botão de Remove do item', () => {
     carrinhoPage.clicarRemoverItem()
 })
 
