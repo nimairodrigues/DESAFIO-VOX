@@ -46,10 +46,11 @@ O sistema permite a submissão do formulário sem preencher o campo "Nome", sem 
 **Em Aberto**
 
 ### **Evidências**  
-[Link para evidência](https://github.com/user-attachments/assets/9cbb16cb-0ebd-4221-9d09-3a410c2b3149)
+
+[Vídeo]
 
 ### **Referências**  
-Caso de Teste CT-001
+Caso de Teste CT-006
 
 ---
 
